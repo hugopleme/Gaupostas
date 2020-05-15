@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+  float aposta,lucro,probabilidade,cotacao;
+
+  printf("Probabilidade do time: ");
+  scanf("%f", &probabilidade);
+  printf("Valor apostado: ");
+  scanf("%f", &aposta);
+
+  cotacao = 100/probabilidade;
+  lucro = aposta*cotacao;
+
+  printf("Valor apostado: %.0f\n", aposta);
+  printf("Lucro obtido: %.0f\n", lucro-aposta);
+  printf("Valor total: %.0f\n", lucro);
+  return 0;
+}

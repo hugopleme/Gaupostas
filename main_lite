@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void linha(void){
+    printf("\n\n\n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+    printf("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\n");
+    printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n\n\n");
+  }
+
+int main(void) {
+
+  float aposta,lucro,probabilidade,cotacao;
+
+  
+  linha();
+
+  printf("\nProbabilidade do time: ");
+  scanf("%f", &probabilidade);
+  printf("Valor apostado: ");
+  scanf("%f", &aposta);
+
+  linha();
+  
+  cotacao = 100/probabilidade;
+  lucro = aposta*cotacao;
+
+  printf("Valor apostado: %.0f\n", aposta);
+  printf("Lucro obtido: %.0f\n", lucro-aposta);
+  printf("Valor total: %.0f\n", lucro);
+  return 0;
+}

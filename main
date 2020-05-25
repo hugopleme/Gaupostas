@@ -19,7 +19,7 @@ int main(void) {
   printf("_____        ____      _____________      _____       _____    ______               _____       _____               ______         _______           _____________                 ______\n");
   printf("_________________     ____       ____     _________________    ______               _________________    _________________         _______          ____       ____     _________________\n");
   printf("_________________    ____         ____    _________________    ______               _________________    _________________         _______         ____         ____    _________________\n");
-  
+
   linha();
 
   printf("\nProbabilidade do time: ");
@@ -28,12 +28,13 @@ int main(void) {
   scanf("%f", &aposta);
 
   linha();
-  
+
   cotacao = 100/probabilidade;
   lucro = aposta*cotacao;
 
   printf("Valor apostado: %.0f\n", aposta);
   printf("Lucro obtido: %.0f\n", lucro-aposta);
   printf("Valor total: %.0f\n", lucro);
+  system("pause");
   return 0;
 }
